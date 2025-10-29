@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirNbN - Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="flex h-screen">
+    <div class="m-auto bg-white shadow-xl rounded-xl p-8 w-96">
+      <h1 class="text-3xl font-bold text-orange-600 mb-6 text-center">AirNbN</h1>
+      <h2 class="text-lg mb-4 text-gray-700 text-center">Entrar</h2>
+      <form id="loginForm" class="flex flex-col space-y-4">
+        <input type="text" id="username" placeholder="Usuário" class="border border-gray-300 p-2 rounded-lg">
+        <select id="role" class="border border-gray-300 p-2 rounded-lg">
+          <option value="locador">Sou Locador</option>
+          <option value="locatario">Sou Locatário</option>
+        </select>
+        <button type="button" onclick="login()" class="bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-lg font-semibold">Entrar</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
